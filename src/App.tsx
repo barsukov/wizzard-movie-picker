@@ -7,7 +7,6 @@ import { statements } from "@babel/template";
 import HomePage from "./MovieSelectionApp/HomePage";
 import { Link } from "@reach/router";
 
-const EpisodeLists = React.lazy(() => import("./MovieSelectionApp/EpisodesLists"));
 export default function App({
   children
 }: {

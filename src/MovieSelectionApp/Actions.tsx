@@ -1,14 +1,13 @@
-import { IAction, IEpisode, IShow, Dispatch } from "./interfaces";
+import { IAction, IEpisode, Dispatch } from "./interfaces";
 
 export const fetchDataAction = async (dispatch: Dispatch) => {
-  const URL = "http://api.tvmaze.com/search/shows?q=girls&embeded=episodes";
+  const URL = 'https://api.tvmaze.com/singlesearch/shows?q=rick-&-morty&embed=episodes';
   const data = await fetch(URL);
   const dataJson = await data.json();
-  console.log(dataJson);
 
   return dispatch({
     type: "FETCH_DATA",
-    payload: dataJson
+    payload: dataJson._embedded.episodes
   });
 };
 
@@ -21,7 +20,7 @@ export const toogleFav = (dispatch: any, episode: IEpisode, favorites: Array<IEp
 
   if (episodeInFav) {
     const favWithoutEpisode = favorites.filter(
-      (fav: IEpisode) => fav.show.id != episode.show.id
+      (fav: IEpisode) => fav.id !== episode.id
     );
     dispatchObj = {
       type: "REMOVE_FAV",

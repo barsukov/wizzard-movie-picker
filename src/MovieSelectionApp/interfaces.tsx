@@ -10,10 +10,6 @@ export interface IHomePageProps{
 export type Dispatch = React.Dispatch<IAction>;
 
 export interface IEpisode {
-  show: IShow;
-};
-
-export interface IShow {
   id: string;
   name: string;
   image: any;
