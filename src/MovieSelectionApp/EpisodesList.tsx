@@ -14,7 +14,7 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
 
   return episodes.map((episode: IEpisode) => {
     return (
-      <Card>
+      <Card key={episode.id}>
         <Image
           sx={{
             width: ["100%", "100%"],
