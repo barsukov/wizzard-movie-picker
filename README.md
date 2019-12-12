@@ -9,7 +9,7 @@ Feel free to ask any questions
  - Create React App
  - Typescript
  - React Router
- - Styled Componets(CSS-IN-JS)
+ - Emotion/Rebass(CSS-IN-JS)
  - Jest
 
 ## Available Scripts
