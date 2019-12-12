@@ -21,7 +21,7 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
             borderRadius: 8
           }}
           src={!!episode.image ? episode.image.medium : ""}
-          alt={`Rick and Mort ${episode.name}`}
+          alt={`Rick and Morty ${episode.name}`}
         />
         <Heading>
           {" "}
