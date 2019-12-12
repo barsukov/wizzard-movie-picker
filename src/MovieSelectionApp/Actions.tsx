@@ -1,4 +1,4 @@
-import { IAction, IEpisode, Dispatch } from "./interfaces";
+import { IAction, IEpisode, IState ,Dispatch } from "./interfaces";
 
 export const fetchDataAction = async (dispatch: Dispatch) => {
   const URL = 'https://api.tvmaze.com/singlesearch/shows?q=rick-&-morty&embed=episodes';
@@ -11,15 +11,16 @@ export const fetchDataAction = async (dispatch: Dispatch) => {
   });
 };
 
-export const toogleFav = (dispatch: any, episode: IEpisode, favorites: Array<IEpisode>): IAction => {
-  const episodeInFav = favorites.includes(episode);
+export const toggleFavAction = (state: IState, dispatch: any, episode: IEpisode | any): IAction => {
+  const episodeInFav = state.favourites.includes(episode);
+  debugger
   let dispatchObj = {
     type: "ADD_FAV",
-    payload: [episode]
+    payload: episode
   };
 
   if (episodeInFav) {
-    const favWithoutEpisode = favorites.filter(
+    const favWithoutEpisode = state.favourites.filter(
       (fav: IEpisode) => fav.id !== episode.id
     );
     dispatchObj = {

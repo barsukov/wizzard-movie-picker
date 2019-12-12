@@ -15,6 +15,7 @@ ReactDOM.render(
   <StoreProvider>
     <Router>
       <RouterPage pageComponent={<HomePage />} path="/" />
+      <RouterPage pageComponent={<FavPage />} path="/favourites" />
     </Router>
   </StoreProvider>,
   document.getElementById("root")

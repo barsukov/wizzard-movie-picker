@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
-import { IHomePageProps } from "./interfaces";
-import App from "../App";
-import { Store } from '../Store'
-import { fetchDataAction, toogleFav } from './Actions'
+import React from 'react'
 
-const EpisodeLists = React.lazy(() => import("./EpisodesLists"));
+import App from '../App'
+import { Store } from '../Store'
+import { IEpisodeProps } from './interfaces'
+import { fetchDataAction, toggleFavAction } from './Actions'
+
+const EpisodeList = React.lazy<any>(() => import('./EpisodesList'))
 
 export default function HomePage() {
   const { state, dispatch } = React.useContext(Store)
@@ -13,23 +14,20 @@ export default function HomePage() {
     state.episodes.length === 0 && fetchDataAction(dispatch)
   })
 
-  const props: IHomePageProps = {
+  const props: IEpisodeProps = {
     episodes: state.episodes,
-    toogleFav,
-    favorites: state.favorites
-  };
+    store: { state, dispatch },
+    toggleFavAction,
+    favourites: state.favourites
+  }
 
   return (
     <App>
-      <Fragment>
-        <>
-          <section>
-            <React.Suspense fallback={<div>loading...</div>}>
-              <EpisodeLists {...props} />
-            </React.Suspense>
-          </section>
-        </>
-      </Fragment>
+      <React.Suspense fallback={<div>loading...</div>}>
+        <section className='episode-layout'>
+          <EpisodeList {...props} />
+        </section>
+      </React.Suspense>
     </App>
-  );
-};
+  )
+}
