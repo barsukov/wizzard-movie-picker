@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { Store } from "./Store";
 import { Link } from "@reach/router";
@@ -13,7 +12,7 @@ export default function App({
   return (
     <Fragment>
       <>
-        <p>Hello girls</p>
+        <p>Hello from different dimension </p>
         <div>
           <Link to="/"> Home</Link>
           <Link to='/favourites'>Favourite(s): {state.favourites.length}</Link>

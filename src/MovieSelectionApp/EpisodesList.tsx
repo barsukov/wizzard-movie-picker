@@ -14,10 +14,10 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
 
   return episodes.map((episode: IEpisode) => {
     return (
-      <section key={episode.id} className='episode-box'>
+      <div key={episode.id} className='episode-item'>
         <img src={!!episode.image ? episode.image.medium : ''} alt={`Rick and Mort ${episode.name}`} />
         <div>{episode.name}</div>
-        <section style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div >
           <div>
             Seasion: {episode.season} Number: {episode.number}
           </div>
@@ -29,8 +29,8 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
               ? 'Unfav'
               : 'Fav'}
           </button>
-        </section>
-      </section>
+        </div>
+      </div>
     )
   })
 }
