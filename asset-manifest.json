@@ -1,0 +1,24 @@
+{
+  "files": {
+    "static/js/0.abaa93a4.chunk.js": "/wizzard-movie-picker/static/js/0.abaa93a4.chunk.js",
+    "static/js/0.abaa93a4.chunk.js.map": "/wizzard-movie-picker/static/js/0.abaa93a4.chunk.js.map",
+    "main.css": "/wizzard-movie-picker/static/css/main.5f5c4438.chunk.css",
+    "main.js": "/wizzard-movie-picker/static/js/main.a22fa5a6.chunk.js",
+    "main.js.map": "/wizzard-movie-picker/static/js/main.a22fa5a6.chunk.js.map",
+    "runtime-main.js": "/wizzard-movie-picker/static/js/runtime-main.16c1a5ee.js",
+    "runtime-main.js.map": "/wizzard-movie-picker/static/js/runtime-main.16c1a5ee.js.map",
+    "static/js/3.362b2bd5.chunk.js": "/wizzard-movie-picker/static/js/3.362b2bd5.chunk.js",
+    "static/js/3.362b2bd5.chunk.js.map": "/wizzard-movie-picker/static/js/3.362b2bd5.chunk.js.map",
+    "index.html": "/wizzard-movie-picker/index.html",
+    "precache-manifest.7307ecf7d63ced8625ef4f1b48ab370c.js": "/wizzard-movie-picker/precache-manifest.7307ecf7d63ced8625ef4f1b48ab370c.js",
+    "service-worker.js": "/wizzard-movie-picker/service-worker.js",
+    "static/css/main.5f5c4438.chunk.css.map": "/wizzard-movie-picker/static/css/main.5f5c4438.chunk.css.map",
+    "static/js/3.362b2bd5.chunk.js.LICENSE": "/wizzard-movie-picker/static/js/3.362b2bd5.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16c1a5ee.js",
+    "static/js/3.362b2bd5.chunk.js",
+    "static/css/main.5f5c4438.chunk.css",
+    "static/js/main.a22fa5a6.chunk.js"
+  ]
+}
