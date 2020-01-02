@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodesList renders without elements 1`] = `
+<EpisodesList
+  episodes={
+    Array [
+      Object {
+        "airdate": "test",
+        "airstamp": "test",
+        "airtime": "test",
+        "id": 1,
+        "image": Object {
+          "medium": "test",
+          "original": "originalTest",
+        },
+        "name": "Bob",
+        "number": 2,
+        "runtime": 3,
+        "season": 4,
+        "summary": "Good Episode",
+        "url": "GoodUrl",
+      },
+    ]
+  }
+  favourites={Array []}
+  store={
+    Object {
+      "dispatch": [MockFunction],
+      "state": Object {
+        "episodes": Array [
+          Object {
+            "airdate": "test",
+            "airstamp": "test",
+            "airtime": "test",
+            "id": 1,
+            "image": Object {
+              "medium": "test",
+              "original": "originalTest",
+            },
+            "name": "Bob",
+            "number": 2,
+            "runtime": 3,
+            "season": 4,
+            "summary": "Good Episode",
+            "url": "GoodUrl",
+          },
+        ],
+        "favourites": Array [],
+      },
+    }
+  }
+  toggleFavAction={[MockFunction]}
+>
+  <ForwardRef
+    key="1"
+  >
+    <Styled(div)
+      variant="card"
+    >
+      <div
+        className="css-vurnku"
+      >
+        <Styled(div)
+          sx={
+            Object {
+              "backgroundImage": "url(originalTest)",
+              "backgroundSize": "cover",
+              "bg": "gray",
+              "borderRadius": 8,
+              "color": "white",
+              "px": 4,
+              "py": 6,
+            }
+          }
+        >
+          <div
+            className="css-h6swki"
+          >
+            <Styled(div)
+              sx={
+                Object {
+                  "backgroundSize": "cover",
+                  "bg": "white",
+                  "borderRadius": 8,
+                  "color": "white",
+                  "opacity": "60%",
+                  "px": 1,
+                  "py": 3,
+                }
+              }
+            >
+              <div
+                className="css-1iybr07"
+              >
+                <ForwardRef
+                  color="black"
+                  fontSize={
+                    Array [
+                      3,
+                      5,
+                    ]
+                  }
+                  textAlign="center"
+                >
+                  <Styled(div)
+                    __css={
+                      Object {
+                        "fontFamily": "heading",
+                        "fontSize": 4,
+                        "fontWeight": "heading",
+                        "lineHeight": "heading",
+                      }
+                    }
+                    as="h2"
+                    color="black"
+                    fontSize={
+                      Array [
+                        3,
+                        5,
+                      ]
+                    }
+                    textAlign="center"
+                    tx="text"
+                    variant="heading"
+                  >
+                    <h2
+                      className="css-1agp5a6"
+                    >
+                      Seasion: 
+                      4
+                       Number: 
+                      2
+                    </h2>
+                  </Styled(div)>
+                </ForwardRef>
+              </div>
+            </Styled(div)>
+          </div>
+        </Styled(div)>
+        <Styled(div)
+          episodes={
+            Array [
+              Object {
+                "airdate": "test",
+                "airstamp": "test",
+                "airtime": "test",
+                "id": 1,
+                "image": Object {
+                  "medium": "test",
+                  "original": "originalTest",
+                },
+                "name": "Bob",
+                "number": 2,
+                "runtime": 3,
+                "season": 4,
+                "summary": "Good Episode",
+                "url": "GoodUrl",
+              },
+            ]
+          }
+          favourites={Array []}
+          store={
+            Object {
+              "dispatch": [MockFunction],
+              "state": Object {
+                "episodes": Array [
+                  Object {
+                    "airdate": "test",
+                    "airstamp": "test",
+                    "airtime": "test",
+                    "id": 1,
+                    "image": Object {
+                      "medium": "test",
+                      "original": "originalTest",
+                    },
+                    "name": "Bob",
+                    "number": 2,
+                    "runtime": 3,
+                    "season": 4,
+                    "summary": "Good Episode",
+                    "url": "GoodUrl",
+                  },
+                ],
+                "favourites": Array [],
+              },
+            }
+          }
+          sx={
+            Object {
+              "display": "grid",
+              "gridGap": 2,
+            }
+          }
+          toggleFavAction={[MockFunction]}
+        >
+          <div
+            className="css-vl1zvk"
+          >
+            <ForwardRef
+              color="primary"
+              fontSize={
+                Array [
+                  3,
+                  4,
+                  5,
+                ]
+              }
+              fontWeight="bold"
+            >
+              <Styled(div)
+                color="primary"
+                fontSize={
+                  Array [
+                    3,
+                    4,
+                    5,
+                  ]
+                }
+                fontWeight="bold"
+                tx="text"
+              >
+                <div
+                  className="css-911jbo"
+                >
+                  Bob
+                </div>
+              </Styled(div)>
+            </ForwardRef>
+            <ForwardRef
+              onClick={[Function]}
+              variant="secondary"
+            >
+              <Styled(div)
+                __css={
+                  Object {
+                    "appearance": "none",
+                    "bg": "primary",
+                    "border": 0,
+                    "borderRadius": 4,
+                    "color": "white",
+                    "display": "inline-block",
+                    "fontSize": "inherit",
+                    "lineHeight": "inherit",
+                    "px": 3,
+                    "py": 2,
+                    "textAlign": "center",
+                    "textDecoration": "none",
+                  }
+                }
+                as="button"
+                onClick={[Function]}
+                tx="buttons"
+                variant="secondary"
+              >
+                <button
+                  className="css-vhv7r1"
+                  onClick={[Function]}
+                >
+                  Fav
+                </button>
+              </Styled(div)>
+            </ForwardRef>
+          </div>
+        </Styled(div)>
+      </div>
+    </Styled(div)>
+  </ForwardRef>
+</EpisodesList>
+`;
