@@ -9,12 +9,19 @@ export type FavAction = (
 ) => IAction;
 
 export interface IEpisodeProps {
-  episodes: Array<IEpisode>
-  store: { state: IState; dispatch: Dispatch }
-  toggleFavAction: FavAction
-  favourites: Array<IEpisode>
+  episodes: Array<IEpisode>;
+  store: { state: IState; dispatch: Dispatch };
+  toggleFavAction: FavAction;
+  favourites: Array<IEpisode>;
 }
 export type Dispatch = React.Dispatch<IAction>;
+
+export interface IEpisodeListProps {
+  episodes: Array<IEpisode>;
+  toggleFavAction: FavAction;
+  favourites: Array<IEpisode>;
+  store: { state: IState; dispatch: Dispatch };
+}
 
 export interface IEpisode {
   airdate: string;

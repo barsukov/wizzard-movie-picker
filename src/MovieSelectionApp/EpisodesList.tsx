@@ -1,17 +1,11 @@
 import React from "react";
-import { IEpisode, Dispatch, IState, FavAction } from "./interfaces";
+import { IEpisode, IEpisodeListProps } from "./interfaces";
 import { Button, Box, Heading, Card, Text } from "rebass";
-interface IProps {
-  episodes: Array<IEpisode>;
-  toggleFavAction: FavAction;
-  favourites: Array<IEpisode>;
-  store: { state: IState; dispatch: Dispatch };
-}
 
 const isFavorite = (favourites: Array<IEpisode>, episode: IEpisode) => {
   return favourites.find((fav: IEpisode) => fav.id === episode.id);
 };
-export default function EpisodesList(props: IProps): Array<JSX.Element> {
+export default function EpisodesList(props: IEpisodeListProps): Array<JSX.Element> {
   const { episodes, toggleFavAction, favourites, store } = props;
   const { state, dispatch } = store;
 
