@@ -1,9 +1,11 @@
+# Wizzard movie picker
 The purpose of this project is to create a movie picker app from a public API. 
 
 The app has two pages with a series and one with selected favorites episodes from Rick and Morty.
 
 Since we have hooks I decided to not to use Redux.
-Feel free to ask any questions
+
+Feel free to ask any questions.
 ## Technology usages and versions of it
  - React v.16.9.11 (Hooks)
  - Create React App
